@@ -21,8 +21,8 @@ IMSPBOOK <ACT:4><LASTNAME:10><FIRSTNAME:10><EXTENSION:10><ZIPCODE:7>
 
 Where `<ACT>` can be DIS, ADD, DEL, and UPD.
 
-For *DIS* and *DEL*, you only need to specify `<LASTNAME>`
-For *ADD* and *UPD*, you need to specify `<LASTNAME>`, `<FIRSTNAME>`, `<EXTENSION>`and `<ZIPCODE>`
+For **DIS** and **DEL**, you only need to specify `<LASTNAME>`
+For **ADD** and **UPD**, you need to specify `<LASTNAME>`, `<FIRSTNAME>`, `<EXTENSION>`and `<ZIPCODE>`
 
 For example:
 
@@ -35,25 +35,25 @@ IMSPBOOK DEL DOE
 
 It issues the following SQL:
 
-For the *DIS* action, it uses:
+For the **DIS** action, it uses:
 ```
 SELECT * FROM PHONEBOOK.PERSON WHERE LASTNAME = ?
 ```
 
-For the *DEL* action, it uses:
+For the **DEL** action, it uses:
 ```
 DELETE FROM PHONEBOOK.PERSON 
  WHERE LASTNAME = ?
 ```
 
-For the *ADD* action, it uses:
+For the **ADD** action, it uses:
 ```
 INSERT INTO PHONEBOOK.PERSON
        (LASTNAME, FIRSTNAME, EXTENSION, ZIPCODE)
   VALUES (?, ?, ?, ?)
 ```
 
-For the *UPD* action, it uses:
+For the **UPD** action, it uses:
 ```
 UPDATE PHONEBOOK.PERSON
        SET FIRSTNAME = ?,
