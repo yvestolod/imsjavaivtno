@@ -9,7 +9,7 @@ This application uses the IVPDB2 DB and DFSIVP37 PSB.
 // PHONEAP  PCB TYPE=DB,DBDNAME=IVPDB2,PROCOPT=A,KEYLEN=10
 //          SENSEG NAME=A1111111,PARENT=0,PROCOPT=AP      
 //          PSBGEN LANG=JAVA,PSBNAME=DFSIVP37             
-//	        END  
+//          END  
 //
 ```
 
