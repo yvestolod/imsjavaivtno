@@ -16,7 +16,7 @@ This application uses the IVPDB2 DB and DFSIVP37 PSB.
 The input to transaction is
 
 ```
-IMSPBOOK <ACT:4><LASTNAME:10><FIRSTNAME:10><EXTENSION:10><ZIPCODE:7>
+RUNPHONE <ACT:4><LASTNAME:10><FIRSTNAME:10><EXTENSION:10><ZIPCODE:7>
 ```
 
 Where `<ACT>` can be DIS, ADD, DEL, and UPD.
